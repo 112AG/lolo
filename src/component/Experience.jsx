@@ -174,8 +174,8 @@ function Experience() {
       scrollTrigger: {
         trigger: pageRef.current,
         scroller: "body",
-        markers: false,
-        start: 'top top',
+        markers: true,
+        start: 'top 20%',
         end: () => `+=${textWidth * 1}`, // Longer scroll distance
         scrub: 1,
         pin: true,
