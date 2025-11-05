@@ -225,6 +225,7 @@ function Experience() {
 }
 
 export default Experience;
+//                                                                                                                                 One
 
 // import React, { useRef, useMemo } from "react";
 // import { useGSAP } from "@gsap/react";
@@ -402,8 +403,8 @@ export default Experience;
 //       scrollTrigger: {
 //         trigger: pageRef.current,
 //         scroller: "body",
-//         markers: false,
-//         start: 'top top',
+//         markers: true,
+//         start: 'top 20%',
 //         end: () => `+=${textWidth * 1}`, // Longer scroll distance
 //         scrub: 1,
 //         pin: true,
@@ -412,7 +413,7 @@ export default Experience;
 //   }, []);
 
 //   return (
-//     <div>
+//     <div className="pp">
 //       {/* Experience Section */}
 //       <div ref={containerRef} className="three mt-12 py-12">
 //         {/* Heading */}
@@ -453,6 +454,7 @@ export default Experience;
 
 // export default Experience;
 
+//                                                                                                                                 Two
 
 // import React, { useRef, useMemo } from "react";
 // import { useGSAP } from "@gsap/react";
