@@ -30,7 +30,7 @@ function Contact() {
               <input
                 type="text"
                 placeholder="Your Full Name"
-                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-md bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 sm:py-3 rounded-md bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
 
@@ -42,7 +42,7 @@ function Contact() {
               <input
                 type="text"
                 placeholder="What do you need help with?"
-                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
 
@@ -54,7 +54,7 @@ function Contact() {
               <input
                 type="email"
                 placeholder="Your Email Address"
-                className="w-full px-2 sm:px-4  xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
+                className="w-full px-2 sm:px-4  xl:px-8 xl:py-6 py-1.5 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
 
@@ -66,20 +66,20 @@ function Contact() {
               <input
                 type="text"
                 placeholder="Estimated Budget"
-                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
 
             {/* Phone */}
             <div>
-              <label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] font-semibold mb-1 sm:mb-2">
-                Phone Number{" "}
-                <span className="hidden sm:block">(WhatsApp preferred):</span>
-              </label>
+<label className="block text-[10px] sm:text-sm xl:text-[20px] text-[#131B23] whitespace-nowrap font-semibold mb-1 sm:mb-2">
+  Phone Number <span className="sm:inline">(WhatsApp preferred):</span>
+</label>
+
               <input
                 type="tel"
                 placeholder="+91"
-                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
 
@@ -91,7 +91,7 @@ function Contact() {
               <input
                 type="text"
                 placeholder="Tell me about your project"
-                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 pb-2 sm:pb-0 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
+                className="w-full px-2 sm:px-4 xl:px-8 xl:py-6 py-1.5 sm:py-3 rounded-[6px] bg-[#131B23] text-white placeholder-gray-400 placeholder:text-[12px] focus:outline-none"
               />
             </div>
           </form>
@@ -120,7 +120,7 @@ function Contact() {
 
         <a
           href="mailto:artistrebel10@gmail.com"
-          className="w-[40%] sm:w-[26%] lg:w-[30%] 2xl:w-[40%]  max-w-[557px] absolute sm:right-14 rotate-12 sm:rotate-0 -top-16 sm:-top-48"
+          className="w-[40%] sm:w-[26%] lg:w-[30%] 2xl:w-[40%] max-w-[557px] absolute sm:right-14 rotate-12 sm:rotate-0 -top-16 sm:-top-48"
         >
           <img src={email} alt="Email us" />
         </a>
