@@ -1,0 +1,304 @@
+@import "tailwindcss";
+
+
+@keyframes scrollRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-32%); }
+}
+@keyframes scrollLeft {
+  0% { transform: translateX(-36%); }
+  100% { transform: translateX(0%); }
+}
+@keyframes scrollRightSlow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-31%); }
+}
+
+.animate-scroll-right {
+  animation: scrollRight 60s linear infinite;
+}
+.animate-scroll-left {
+  animation: scrollLeft 30s linear infinite;
+}
+.animate-scroll-right-slow {
+  animation: scrollRightSlow 40s linear infinite;
+}
+
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/Presser/MaisonNeue-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* MaisonNeue weights */
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/Presser/MaisonNeue-ExtraThin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/Presser/MaisonNeue-Thin.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/Presser/MaisonNeue-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/Presser/MaisonNeue-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/Presser/MaisonNeue-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/Presser/MaisonNeue-Demi.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/Presser/MaisonNeue-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/Presser/MaisonNeue-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeue';
+  src: url('/Presser/MaisonNeue-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* MaisonNeue Extended weights (separate family) */
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('/Presser/MaisonNeueExtended-ExtraThin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('/Presser/MaisonNeueExtended-Thin.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('/Presser/MaisonNeueExtended-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('/Presser/MaisonNeueExtended-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('/Presser/MaisonNeueExtended-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('/Presser/MaisonNeueExtended-Demi.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('/Presser/MaisonNeueExtended-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('/Presser/MaisonNeueExtended-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MaisonNeueExtended';
+  src: url('/Presser/MaisonNeueExtended-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* MaisonNeue utility classes */
+.font-maisonneue-extrathin { font-family: 'MaisonNeue', Arial, sans-serif; font-weight: 100; }
+.font-maisonneue-thin { font-family: 'MaisonNeue', Arial, sans-serif; font-weight: 200; }
+.font-maisonneue-light { font-family: 'MaisonNeue', Arial, sans-serif; font-weight: 300; }
+.font-maisonneue-book { font-family: 'MaisonNeue', Arial, sans-serif; font-weight: 400; }
+.font-maisonneue-medium { font-family: 'MaisonNeue', Arial, sans-serif; font-weight: 500; }
+.font-maisonneue-demi { font-family: 'MaisonNeue', Arial, sans-serif; font-weight: 600; }
+.font-maisonneue-bold { font-family: 'MaisonNeue', Arial, sans-serif; font-weight: 700; }
+.font-maisonneue-extrabold { font-family: 'MaisonNeue', Arial, sans-serif; font-weight: 800; }
+.font-maisonneue-black { font-family: 'MaisonNeue', Arial, sans-serif; font-weight: 900; }
+.font-maisonneue { font-family: 'MaisonNeue', Arial, sans-serif; }
+
+/* MaisonNeueExtended utility */
+.font-maisonneue-extended { font-family: 'MaisonNeueExtended', Arial, sans-serif; }
+
+@font-face {
+  font-family: 'Presser';
+  src: url('/Presser/presser-thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Presser';
+  src: url('/Presser/presser-extralight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Presser';
+  src: url('/Presser/presser-light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Presser';
+  src: url('/Presser/presser-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Presser';
+  src: url('/Presser/presser-medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Presser';
+  src: url('/Presser/presser-semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Presser';
+  src: url('/Presser/presser-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Presser';
+  src: url('/Presser/presser-extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+/* utility classes for Presser weights */
+.font-presser-thin {
+  font-family: 'Presser', Arial, sans-serif;
+  font-weight: 100;
+}
+.font-presser-extralight {
+  font-family: 'Presser', Arial, sans-serif;
+  font-weight: 200;
+}
+.font-presser-light {
+  font-family: 'Presser', Arial, sans-serif;
+  font-weight: 300;
+}
+.font-presser-regular {
+  font-family: 'Presser', Arial, sans-serif;
+  font-weight: 400;
+}
+.font-presser-medium {
+  font-family: 'Presser', Arial, sans-serif;
+  font-weight: 500;
+}
+.font-presser-semibold {
+  font-family: 'Presser', Arial, sans-serif;
+  font-weight: 600;
+}
+.font-presser-bold {
+  font-family: 'Presser', Arial, sans-serif;
+  font-weight: 700;
+}
+.font-presser-extrabold {
+  font-family: 'Presser', Arial, sans-serif;
+  font-weight: 800;
+}
+
+.font-presser { /* shorthand */
+  font-family: 'Presser', Arial, sans-serif;
+}
+/* 
+body {
+  font-family: 'Presser', Arial, sans-serif;
+  font-weight: bold;
+} */
+
+.font-presser-bold {
+  font-family: 'Presser', Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.font-maisonneue-bold {
+  font-family: 'MaisonNeue', Arial, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.three {
+  background-image: url('../src/assets/artistrebelbackgroundthree.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.contact-bg {
+  background-image: url('./assets/contact/artistrebelbackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+/*  */
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
